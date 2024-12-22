@@ -13,7 +13,9 @@ const puppeteer = require('puppeteer');
 
   await page.click('#getUserButton');
 
-  await page.waitForTimeout(3000);
+  //await page.waitForTimeout(3000);
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  await delay(3000);
 
   await page.waitForSelector('#userCity');
 

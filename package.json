@@ -1,7 +1,7 @@
 {
   "name": "js-fundamentals-ajax-tasks",
   "jest": {
-    "type": "module"
+    "type":  "module"
   },
   "version": "1.0.0",
   "description": "",
@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "node-fetch": "^3.3.2",
-    "puppeteer": "^21.4.1"
+    "puppeteer": "23.10.0"
   }
 }

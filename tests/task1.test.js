@@ -7,7 +7,9 @@ async function checkUsersDisplayed() {
 
   
   const userList = await page.$('.usersList');
-  await  page.waitForTimeout(3000);
+  //await  page.waitForTimeout(3000);
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  await delay(3000);
 
   if (userList) {
     const userItems = await userList.$$('li');
